@@ -6,6 +6,8 @@ import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { createEmotionCache } from '../utils/create-emotion-cache';
 import { theme } from '../theme';
+import "tailwindcss/tailwind.css";
+import "../theme/globals.css";
 
 const clientSideEmotionCache = createEmotionCache();
 

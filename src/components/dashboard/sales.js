@@ -14,8 +14,8 @@ export const Sales = (props) => {
         barThickness: 12,
         borderRadius: 4,
         categoryPercentage: 0.5,
-        data: [18, 5, 19, 27, 29, 19, 20],
-        label: 'This year',
+        data: [100, 100, 60, 70, 35, 50, 70],
+        label: 'Highest Score Received',
         maxBarThickness: 10
       },
       {
@@ -24,12 +24,12 @@ export const Sales = (props) => {
         barThickness: 12,
         borderRadius: 4,
         categoryPercentage: 0.5,
-        data: [11, 20, 12, 29, 30, 25, 13],
-        label: 'Last year',
+        data: [100, 100, 40, 60, 30, 25, 13],
+        label: 'Lowest Score Received',
         maxBarThickness: 10
       }
     ],
-    labels: ['1 Aug', '2 Aug', '3 Aug', '4 Aug', '5 Aug', '6 Aug', '7 aug']
+    labels: ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th']
   };
 
   const options = {
@@ -92,7 +92,7 @@ export const Sales = (props) => {
             Last 7 days
           </Button>
         )}
-        title="Latest Sales"
+        title="Latest Health Scores"
       />
       <Divider />
       <CardContent>

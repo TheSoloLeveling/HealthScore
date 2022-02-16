@@ -9,6 +9,8 @@ import { TotalCustomers } from '../components/dashboard/total-customers';
 import { TotalProfit } from '../components/dashboard/total-profit';
 import { TrafficByDevice } from '../components/dashboard/traffic-by-device';
 import { DashboardLayout } from '../components/dashboard-layout';
+import Card from 'src/components/Card';
+
 
 const Dashboard = () => (
   <>
@@ -17,11 +19,18 @@ const Dashboard = () => (
         Dashboard | Material Kit
       </title>
     </Head>
+    <div className="flex p-10 space-x-3">
+                <Card title="TEMPERATURE" balance={409.0790} icon={0} />
+                <Card title="HUMIDITY" balance={300.0790} icon={1} />
+                <Card title="PASSENGER FLOW" balance={100.0790} icon={2} />
+                <Card title="test" balance={0} icon={3} />
+
+    </div>
     <Box
       component="main"
       sx={{
         flexGrow: 1,
-        py: 8
+        py: 2
       }}
     >
       <Container maxWidth={false}>
@@ -29,42 +38,6 @@ const Dashboard = () => (
           container
           spacing={3}
         >
-          <Grid
-            item
-            lg={3}
-            sm={6}
-            xl={3}
-            xs={12}
-          >
-            <Budget />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TotalCustomers />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TasksProgress />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TotalProfit sx={{ height: '100%' }} />
-          </Grid>
           <Grid
             item
             lg={8}
@@ -81,7 +54,8 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            <TrafficByDevice sx={{ height: '100%' }} />
+            <TrafficByDevice></TrafficByDevice>
+           
           </Grid>
           <Grid
             item
@@ -90,7 +64,7 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            <LatestProducts sx={{ height: '100%' }} />
+            
           </Grid>
           <Grid
             item
@@ -99,7 +73,7 @@ const Dashboard = () => (
             xl={9}
             xs={12}
           >
-            <LatestOrders />
+            
           </Grid>
         </Grid>
       </Container>
