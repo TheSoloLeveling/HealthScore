@@ -20,11 +20,7 @@ export const ProductCard = ({ product, ...rest }) => (
           pb: 3
         }}
       >
-        <Avatar
-          alt="Product"
-          src={product.media}
-          variant="square"
-        />
+        
       </Box>
       <Typography
         align="center"
@@ -64,7 +60,7 @@ export const ProductCard = ({ product, ...rest }) => (
             sx={{ pl: 1 }}
             variant="body2"
           >
-            Updated 2hr ago
+            Added 2hr ago
           </Typography>
         </Grid>
         <Grid
@@ -83,7 +79,7 @@ export const ProductCard = ({ product, ...rest }) => (
           >
             {product.totalDownloads}
             {' '}
-            Downloads
+            times
           </Typography>
         </Grid>
       </Grid>

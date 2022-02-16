@@ -28,7 +28,7 @@ const items = [
     title: 'Affectation des sieges'
   },
   {
-    href: '/account',
+    href: '/products',
     icon: (<XCircleIcon fontSize="small" />),
     title: 'Posts D urgence'
   },
@@ -102,22 +102,27 @@ export const DashboardSidebar = (props) => {
           height: '100%'
         }}
       >
+       
         <div>
-          <Box sx={{ p: 3 }}>
+          <Box sx={{ p: 5, display: 'inline-block' }}>
+          
             <NextLink
               href="/"
               passHref
-            >
+            >   
               <a>
                 <Logo
+                
                   sx={{
                     height: 42,
-                    width: 42
-                  }}
-                />
+                    width: 42,
+                  }}          
+                />    
               </a>
             </NextLink>
+            <b style={{display: 'inline-block'}} >App name</b> 
           </Box>
+          
           <Box sx={{ px: 2 }}>
             <Box
               sx={{
@@ -157,6 +162,61 @@ export const DashboardSidebar = (props) => {
             </Box>
           </Box>
         </div>
+        <Divider
+          sx={{
+            borderColor: '#2D3748',
+            my: 3
+          }}
+        />
+
+<div>
+          
+          <Box sx={{ px: 2 }}>
+            <Box
+              sx={{
+                alignItems: 'center',
+                backgroundColor: 'rgba(255, 255, 255, 0.04)',
+                cursor: 'pointer',
+                display: 'flex',
+                justifyContent: 'space-between',
+                px: 3,
+                py: '11px',
+                borderRadius: 1
+              }}
+            >
+              <div>
+                <Typography
+                  color="inherit"
+                  variant="subtitle1"
+                  whiteSpace="nowrap"
+                  
+                >
+                  Données sur compartiment
+                </Typography>
+                <Typography
+                  color="neutral.400"
+                  variant="body2"
+                >
+                  Nbr de passagers :
+                </Typography>
+                <Typography
+                  color="neutral.400"
+                  variant="body2"
+                >
+                  Nbr de passagers : 
+                </Typography>
+                <Typography
+                  color="neutral.400"
+                  variant="body2"
+                >
+                  Nbr de passagers :
+                </Typography>
+              </div>
+              
+            </Box>
+          </Box>
+        </div>
+
         <Divider
           sx={{
             borderColor: '#2D3748',
